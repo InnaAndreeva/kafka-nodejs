@@ -1,0 +1,15 @@
+# Ignore all files by default.
+*
+
+# White list only the required files and folders.
+!wait-for-it.sh
+!package.json
+!package-lock.json
+!tsconfig.json
+!src/main.js
+!src/kafkaConfig.ts
+!src/pgConnection.ts
+!src/types/CardIdType.ts
+!src/types/CardType.ts
+!src/types/CardWithImgType.ts
+!src/*

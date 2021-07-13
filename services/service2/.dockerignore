@@ -1,0 +1,19 @@
+# Ignore all files by default.
+*
+
+# White list only the required files and folders.
+!wait-for-it.sh
+!package.json
+!package-lock.json
+!tsconfig.json
+!kafkaConfig.ts
+!src/main.js
+!src/*
+!src/utils/generateCard.js
+!src/utils/card.png
+!src/utils/cardBuf.png
+!src/utils/writeToFirebase.js
+!src/utils/serviceAccountKey.json
+!src/types/CardType.ts
+!src/types/CardWithImgType.ts
+!src/types/ServiceAccountKeyType.ts

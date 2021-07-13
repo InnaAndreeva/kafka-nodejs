@@ -1,0 +1,3 @@
+INSERT INTO cards
+(id, cardNumber, expirationDate, cardImgUrl, cv, cardHolder)
+VALUES('c4a9e7ba-b5ec-40ed-90ff-0802e7ce60eg', '1234523678129456', '12/23', 'https://storage.googleapis.com/node-kafka.appspot.com/8524634122325.png?GoogleAccessId=firebase-adminsdk-xhavv%40node-kafka.iam.gserviceaccount.com&Expires=16447017600&Signature=cxuHTGr85EmhTjACL3IgvknGdk9w4xmIQKI1jf5AzPtzVwqZ1vVJdKhxLwQo4r83alOwSihOIcqFzz%2FiqLtjmgJm1Sh1JmsKL98NO5ZUJ8LL29zyq%2B6sTJrBpiOoOjs1xPKN7GJ0JPnziD0cI%2FIPaA3%2F%2BJiaeBTndsbaV57AG5NIsEp4j2gccyAb8OsDe2h4O5by2e7PmVWgkVcx2DyU8I8EHzwXP3Ub1wC43CGwQR%2BgD8UX5nVwmDiFucetdYdbqHg2anRrqTBapuW%2FiVDEK35qVBGjlJUrSb2quehN44StrYcuJatC%2B4CqydYfUpiiBgCkjrgJUDrb8gHwXBgvUw%3D%3D', '121', 'Anna Popova');
