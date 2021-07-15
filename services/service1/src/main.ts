@@ -56,15 +56,12 @@ router.post(
             },
         ];
 
-        kafkaProducer.send(
-            payload,
-            (error: Error, result: ProduceRequest): void => {
-                if (error) {
-                    console.error("Sending payload failed:", error);
-                    // return res.status(500).json(error);
-                }
+        kafkaProducer.send(payload, (error: Error, result: ProduceRequest) => {
+            if (error) {
+                console.error("Sending payload failed:", error);
+                return res.status(500).json(error);
             }
-        );
+        });
 
         kafkaConsumer.on(
             "message",
@@ -82,7 +79,7 @@ router.post(
 
                 const image: string = result.rows[0].cardimgurl;
 
-                return res.status(202).json({ image });
+                return res.status(200).json({ image });
             }
         );
     }
