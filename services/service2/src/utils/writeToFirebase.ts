@@ -1,13 +1,13 @@
 const saltedMd5 = require("salted-md5");
 const admin = require("firebase-admin");
 const uuidv4 = require("uuid/v4");
-require("dotenv").config({ path: "../../.env" });
+require("dotenv").config({ path: "../src/.env" });
 
-const { serviceAccount } = require("./serviceAccountKey");
+const { serviceAccount, storageBucket } = require("./serviceAccountKey");
 
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
-    storageBucket: "gs://node-kafka.appspot.com",
+    storageBucket,
 });
 
 const bucket = admin.storage().bucket();

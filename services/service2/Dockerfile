@@ -14,7 +14,7 @@ RUN apk add openssl \
 RUN apk add bash bash-doc bash-completion
 
 # Copy over the package.json and lock file to the containers working directory.
-COPY ./package.json ./package-lock.json ./tsconfig.json /src/
+COPY ./package.json ./package-lock.json ./tsconfig.json ./.env /src/
 
 # Install build dependencies (required for node-gyp), install packages then delete build dependencies.
 # This is all done in the same command / layer so when it caches, it won't bloat the image size.
