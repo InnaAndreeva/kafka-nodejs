@@ -26,7 +26,11 @@ import { kafkaProducer, kafkaConsumer } from "./kafkaConfig";
 				},
 			];
 
-			kafkaProducer.send(payload, () => {});
+			kafkaProducer.send(payload, (error: Error) => {
+				if (error) {
+					console.error("Sending payload failed:", error);
+				}
+			});
 		}
 	);
 })();
